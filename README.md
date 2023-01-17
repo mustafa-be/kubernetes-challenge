@@ -1,10 +1,10 @@
 # Kuberentes Challenge
 
-1. clone the kubernetes challenge repo.
+1. Clone the kubernetes challenge repo.
     
     git clone https://github.com/learnk8s/kubernetes-challenge && cd kubernetes-challenge
 
-2. enable minikube docker registry, build the docker image. 
+2. Enable minikube docker registry, build the docker image. 
 
     eval $(minkube docker-env)
 

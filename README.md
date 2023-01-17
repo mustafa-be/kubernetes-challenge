@@ -4,13 +4,11 @@
     
     git clone https://github.com/learnk8s/kubernetes-challenge && cd kubernetes-challenge
 
-2. build the docker image and push image to a minikube docker image registry.
+2. enable minikube docker registry, build the docker image. 
 
-    # enable minikube docker registry
     eval $(minkube docker-env)
 
-    # build application image
-    docker build . -t <username>/myname-nodejs
+    docker build . -t <username>/nodejs-app
 
 3. Start your local minikube and enable ingress controller for exposing the app.
 

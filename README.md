@@ -4,15 +4,15 @@
     
         git clone https://github.com/learnk8s/kubernetes-challenge && cd kubernetes-challenge
 
-2. Enable minikube docker registry, build the docker image. 
-
-        eval $(minikube docker-env)
-        docker build . -t nodejs-app
-
-3. Start your local minikube and enable ingress controller for exposing the app.
+2. Start your local minikube and enable ingress controller for exposing the app.
 
         minikube start
         minikube addons enable ingress
+
+3. Enable minikube docker registry, build the docker image. 
+
+        eval $(minikube docker-env)
+        docker build . -t nodejs-app
 
 4. Create the k8s resources using cli.
 

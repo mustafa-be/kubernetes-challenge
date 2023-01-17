@@ -14,11 +14,17 @@
         eval $(minikube docker-env)
         docker build . -t nodejs-app
 
-4. Create the k8s resources using cli.
+4. Remove the learnk8s/kubernetes-challenge repo and Clone the kubernetes challenge solution repo.
+    
+        cd ..
+        rm -rf kubernetes-challenge
+        git clone https://github.com/mustafa-be/kubernetes-challenge && cd kubernetes-challenge
+
+5. Create the k8s resources using cli.
 
         kubectl create ns kubernetes-challenge
         kubectl apply -f k8s-manifests/
     
-5. Run the following command to see if your app is exposed.
+6. Run the following command to see if your app is exposed.
 
         curl $(minikube ip)

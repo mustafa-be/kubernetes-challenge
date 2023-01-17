@@ -19,6 +19,6 @@
         kubectl create ns kubernetes-challenge
         kubectl apply -f k8s-manifests/
     
-5. Run the following command to see if your app is exposed
+5. Run the following command to see if your app is exposed.
 
         curl $(minikube ip)

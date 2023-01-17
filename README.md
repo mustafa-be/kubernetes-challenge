@@ -7,7 +7,6 @@
 2. Enable minikube docker registry, build the docker image. 
 
         eval $(minkube docker-env)
-
         docker build . -t <username>/nodejs-app
 
 3. Start your local minikube and enable ingress controller for exposing the app.
@@ -17,7 +16,9 @@
 
 4. Create the k8s resources using cli.
 
-        kubectl create ns kubernetes-challenge     
-
+        kubectl create ns kubernetes-challenge
         kubectl apply -f k8s-manifests/
     
+5. Run the following command to see if your app is exposed
+
+        curl $(minikube ip)

@@ -6,8 +6,8 @@
 
 2. Enable minikube docker registry, build the docker image. 
 
-        eval $(minkube docker-env)
-        docker build . -t <username>/nodejs-app
+        eval $(minikube docker-env)
+        docker build . -t nodejs-app
 
 3. Start your local minikube and enable ingress controller for exposing the app.
 
